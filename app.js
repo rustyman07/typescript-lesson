@@ -1,9 +1,13 @@
-var InputNum1 = document.querySelector("#input1");
-var InputNum2 = document.querySelector("#input2");
-var submitButton = document.querySelector("button");
-function add(num1, num2) {
-    return num1 + num2;
+function addFunction(num1, num2, showResult) {
+    var result = num1 + num2;
+    if (showResult) {
+        console.log(result);
+    }
+    else {
+        showResult = false;
+    }
 }
-submitButton === null || submitButton === void 0 ? void 0 : submitButton.addEventListener("click", function () {
-    console.log(add(+InputNum1.value, +InputNum2.value));
-});
+var number1 = 20;
+var number2 = 2.4;
+var showResult = true;
+addFunction(number1, number2, showResult);
